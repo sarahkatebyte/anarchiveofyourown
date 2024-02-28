@@ -1,27 +1,26 @@
 {
-    "manifest_version": 3,
-    "name": "Playlist of Web Archive URLs",
-    "version": "1.0",
-    "description": "Easily save and manage a playlist of Internet Archive URLs.",
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "images/icon16.png",
-        "48": "images/icon48.png",
-        "128": "images/icon128.png"
-      }
-    },
-    "background": {
-      "service_worker": "background.js"
-    },
-    "permissions": [
-      "activeTab",
-      "storage"
-    ],
-    "icons": {
+  "manifest_version": 3,
+  "name": "Playlist of Web Archive URLs",
+  "version": "1.0",
+  "description": "Easily save and manage a playlist of Internet Archive URLs.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
       "16": "images/icon16.png",
       "48": "images/icon48.png",
       "128": "images/icon128.png"
     }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "icons": {
+    "16": "Downloads/",
+    "48": "images/icon48.png",
+    "128": "images/Designbolts-Free-Movie-Folder-Film-Noir.128.png"
   }
-  
+}
