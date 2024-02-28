@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Playlist Popup</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add CSS styling for better presentation */
+        .container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            /* Add margin for spacing */
+        }
+
+        input[type="text"] {
+            flex: 1;
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
     <h1>Playlist of Internet Archive URLs</h1>
-    <input type="text" id="url-input" placeholder="Add URL here" size="30">
-    <button id="add-url-btn">Add to Playlist</button>
+    <!-- Input field for adding URLs to the playlist -->
+    <div class="container">
+        <input type="text" id="url-input" placeholder="Add URL here" size="30">
+        <button id="add-url-btn">Add to Playlist</button>
+    </div>
+
+    <!-- Display the playlist -->
     <h2>Playlist</h2>
     <ul id="url-list"></ul>
+
+    <!-- Input field for entering the name of the new playlist -->
+    <div class="container">
+        <input type="text" id="playlistName" placeholder="Enter playlist name">
+        <!-- Button to submit the name of the new playlist -->
+        <button id="createPlaylistBtn">Create Playlist</button>
+    </div>
+
+    <!-- Include your JavaScript file -->
     <script src="popup.js"></script>
 </body>
+
 </html>
